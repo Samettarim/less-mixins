@@ -2,7 +2,7 @@
 
 My own less mixin repository
 
-> A curated list of awesome README
+> A curated list of awesome MelAbu Less mixins
 
 ### This repository has some Less-Mixins for you:
 
