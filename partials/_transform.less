@@ -1,0 +1,21 @@
+/* ************************ *
+ *       @TRANSFORM         *
+ * ************************ */
+.transform(@string) {
+
+    -webkit-transform:@string;
+    -moz-transform:@string;
+    -ms-transform:@string;
+    transform:@string;
+}
+
+/* ************************ *
+ *    @TRANSFORM-ORIGIN     *
+ * ************************ */
+.transform-origin(@x:center, @y:center) {
+
+    -webkit-transform-origin:@x @y;
+    -moz-transform-origin:@x @y;
+    -ms-transform-origin:@x @y;
+    transform-origin:@x @y;
+}

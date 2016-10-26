@@ -1,0 +1,25 @@
+/* ************************ *
+ *         @OPACITY         *
+ * ************************ */
+.opacity(@opacity) {
+
+    @ieOpacity: @opacity * 100;
+
+    -webkit-opacity: @opacity; /* Chrome, Safari 5.4 */
+    -ms-opacity: @opacity; /* IE 10+ */
+    opacity: @opacity; /* W3C, ab Opera 9.0, ab Firefox 0.9 (1.7), ab Chrome 1.0, ab Safari 1.2, WebKit 125, ab Konqueror 4.0 */
+
+    .ie5x & {
+        filter: ~"progid:DXImageTransform.Microsoft.Alpha(@{ieOpacity})"; /* IE 5.5 - later */
+    }
+
+    .ie6 &, 
+    .ie7 & {
+        filter: ~"alpha(opacity='@{ieOpacity}')"; /* ab IE 4.0 | 6 - 7 */
+    }
+
+    .ie8 &,
+    .ie9 & {
+        -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity='@{ieOpacity}')"; /* IE 8 - 9 */
+    }
+}

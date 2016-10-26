@@ -1,0 +1,219 @@
+/**
+ *
+ * LESS THEME TEST
+ *
+ * @author      Samet Tarim
+ * @copyright   (c) 2016, Samet Tarim
+ * @link        http://samet-tarim.de/
+ * @package     MelAbu
+ * @subpackage  Less mixin repository
+ * @since       1.0
+ */
+// Theme
+// Prefix "t-"
+.t-test-case {
+
+    margin: 2em auto;
+
+    // Child element of t-test-case
+    // Seperator: "__"
+    &__inner {
+
+        padding: 1em;
+    }
+}
+
+pre {
+
+    border: 1px solid #d1d1d1;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.3125;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-family: Inconsolata, monospace;
+}
+
+code {
+
+    background: #eaeaea;
+    background: rgba(0,0,0,0.07);
+    font-size: 13px;
+    font-family: @font-code;
+}
+
+.appearance {
+
+    .appearance(button);
+}
+
+.background-size {
+
+    .background-size(100px auto);
+}
+
+.border-radius {
+
+    border: 1px solid #eee;
+    .border-radius(20px 10px 5px 8px);
+}
+
+.box-shadow {
+
+    padding: 1em;
+    .box-shadow(5px 5px 10px 5px #aaa);
+}
+
+.box-shadow-multi {
+
+    padding: 1em;
+    .box-shadow(~"inset 5px 5px 10px #333, 5px 5px 10px 5px #aaa");
+}
+
+.box-sizing {
+
+    width: 100%;
+    padding: 0 100px 0 0;
+    border: 1px solid #eee;
+    
+    .box-sizing();
+}
+
+.column {
+
+    .column();
+}
+
+.column-1 {
+
+    .column(3);
+}
+
+.hyphens {
+
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: justify;  
+
+    p {
+
+        .hyphens();
+    }
+}
+
+.gradient-linear {
+
+    .gradient-linear(#ccc, #fff);
+}
+
+.gradient-vertical {
+
+    .gradient-vertical(#ccc, #fff);
+}
+
+.gradient-horizontal {
+
+    .gradient-horizontal(#ccc, #fff);
+}
+
+.gradient-diagonal {
+
+    .gradient-diagonal(#ccc, #fff);
+}
+
+.opacity {
+
+    .opacity(.4);
+}
+
+.perspective-x {
+
+    .perspective-x(2000px, -45deg);
+}
+
+.perspective-y {
+
+    .perspective-y(2000px, 45deg);
+}
+
+.placeholder {
+    
+    .placeholder(#ddd);
+}
+
+.font-smooth {
+
+    .font-smooth();
+}
+
+.transform {
+
+    .transform(translate(-40px,0));
+}
+
+.transform-multi {
+
+    .transform(~"rotate(-2deg) translate(4px,0)");
+}
+
+.rotate {
+
+    .t-rotate(2deg);
+}
+
+.scale {
+
+    .t-scale(.8);
+}
+
+.skew {
+
+    .t-skew(4deg);
+}
+
+.transition {
+
+    .transition(background 0.3s ease-in);
+
+    &:hover {
+
+        background: #bbb;
+    }
+}
+
+.transition-multi {
+
+    .transition(~"background 0.3s ease-in, color 1s");
+
+    &:hover {
+        background: #bbb;
+        color: #f00;
+    }
+}
+
+.translate {
+
+    .translate(20px, 20px);
+
+    &:hover {
+
+        .translate(0, 0);
+    }
+}
+
+.user-select {
+
+    .user-select(all);
+
+    &:hover {
+
+        &:before {
+
+            content: 'no select';
+        }
+
+        .user-select();
+    }
+}

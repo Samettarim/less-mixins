@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Visual tests for LESS-Mixins crossbrowser</title>
+
+        <link rel="stylesheet" href="css/test.css">
+    </head>
+    <body>
+
+        <div class="l-test-wrap">
+            <h1>LESS-Mixins (crossbrowser)</h1>
+
+            <!--            <div class="t-test-case animation">
+                            <div class="t-test-case__inner">
+                                <code>.animation-keyframes();</code>
+                                <pre>// CSS
+            .animation {
+                // LESS mixin
+                .animation(colors);
+                .animation-keyframes (colors, red, blue);
+            }</pre>
+                            </div>
+                        </div>-->
+
+            <div class="t-test-case">
+                <div class="t-test-case__inner">
+                    <code>.appearance();</code>
+                    <pre>// CSS
+.appearance {
+    // LESS mixin
+    .appearance(button);
+}</pre>
+                </div>
+                <span class="appearance">button</span>
+            </div>
+
+            <div class="t-test-case border-radius">
+                <div class="t-test-case__inner">
+                    <code>.border-radius();</code>
+                    <pre>// CSS
+.border-radius {
+    // LESS mixin
+    .border-radius(20px 10px);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case background-size">
+                <div class="t-test-case__inner">
+                    <code>.background-size(100px auto);</code>
+                    <pre>// CSS
+.background-size {
+    padding: 1em;
+    // LESS mixin
+    .background-size(100px auto);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case box-shadow">
+                <div class="t-test-case__inner">
+                    <code>.box-shadow();</code>
+                    <pre>// CSS
+.box-shadow {
+    padding: 1em;
+    // LESS mixin
+    .box-shadow(5px 5px 10px 5px #aaa);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case box-shadow-multi">
+                <div class="t-test-case__inner">
+                    <code>.box-shadow(); use for multiple ~"first, second, third"</code>
+                    <pre>// CSS
+.box-shadow-multi {
+    padding: 1em;
+    // LESS mixin
+    .box-shadow(~"inset 5px 5px 10px #333, 5px 5px 10px 5px #aaa");
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case box-sizing">
+                <div class="t-test-case__inner">
+                    <code>.box-sizing(); <strong>while</strong> width: 100%; padding: 0 30px;</code>
+                    <pre>// CSS
+.box-sizing {
+    width: 100%;
+    padding: 0 100px 0 0;
+    // LESS mixin
+    .box-sizing();
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case">
+                <div class="t-test-case__inner">
+                    <code>.column()</code>
+                    <pre>// CSS
+.column {
+    // LESS mixin
+    .column();
+}</pre>
+                </div>
+                <p class="column">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+                </p>
+                <div class="t-test-case__inner">
+                    <code>.column()</code>
+                    <pre>// CSS
+.column-1 {
+    // LESS mixin
+    .column(3);
+}</pre>
+                </div>
+                <p class="column-1">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+                </p>
+            </div>
+
+            <div class="t-test-case hyphens" lang="en">
+                <div class="t-test-case__inner">
+                    <code>.hypens();</code>
+                    <pre>.hyphens {
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: justify;  
+
+    p {
+        // LESS mixin
+        .hyphens();
+    }
+}</pre>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+
+            <div class="t-test-case">
+                <div class="t-test-case__inner">
+                    <code>.font-smooth()</code>
+                    <pre>.font-smooth {
+    p {
+        // LESS mixin
+        .font-smooth();
+    }
+}</pre>
+                </div>
+                <div class="l-cell--6">
+                    <h2>No Smooth</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="l-cell--6">
+                    <h2>Smooth</h2>
+                    <p class="font-smooth">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+                <div class="l-clear"></div>
+            </div>
+
+            <div class="t-test-case gradient-linear">
+                <div class="t-test-case__inner">
+                    <code>.gradient-linear();</code>
+                    <pre>// CSS
+.gradient-linear {
+    // LESS mixin
+    .gradient-linear(#ccc, #fff);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case gradient-vertical">
+                <div class="t-test-case__inner">
+                    <code>.gradient-vertical();</code>
+                    <pre>// CSS
+.gradient-vertical {
+    // LESS mixin
+    .gradient-vertical(#ccc, #fff);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case gradient-horizontal">
+                <div class="t-test-case__inner">
+                    <code>.gradient-horizontal();</code>
+                    <pre>// CSS
+.gradient-horizontal {
+    // LESS mixin
+    .gradient-horizontal(#ccc, #fff);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case gradient-diagonal">
+                <div class="t-test-case__inner">
+                    <code>.gradient-diagonal();</code>
+                    <pre>// CSS
+.gradient-diagonal {
+    // LESS mixin
+    .gradient-diagonal(#ccc, #fff);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case opacity">
+                <div class="t-test-case__inner">
+                    <code>.opacity();</code>
+                    <pre>// CSS
+.opacity {
+    // LESS mixin
+    .opacity(.4);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case perspective-x">
+                <div class="t-test-case__inner">
+                    <code>.perspective-x();</code>
+                    <pre>// CSS
+.perspective-x {
+    // LESS mixin
+    .perspective-x(2000px, -45deg);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case perspective-y">
+                <div class="t-test-case__inner">
+                    <code>.perspective-y();</code>
+                    <pre>// CSS
+.perspective-y {
+    // LESS mixin
+    .perspective-y(2000px, 45deg);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case">
+                <div class="t-test-case__inner">
+                    <code>.placeholder();</code>
+                    <pre>// CSS
+.placeholder {
+    // LESS mixin
+    .placeholder(#ddd);
+}</pre>
+                </div>
+                <input class="placeholder" name="name" placeholder="Enter yout name" type="text" />
+            </div>
+
+            <div class="t-test-case transform">
+                <div class="t-test-case__inner">
+                    <code>.transform();</code>
+                    <pre>// CSS
+.transform {
+    // LESS mixin
+    .transform(translate(-40px,0));
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case transform-multi">
+                <div class="t-test-case__inner">
+                    <code>.transform();</code>
+                    <pre>// CSS
+.transform {
+    // LESS mixin
+    .transform(~"rotate(-2deg) translate(-40px,0)");
+}</pre>
+                </div>
+            </div>
+
+
+            <div class="t-test-case rotate">
+                <div class="t-test-case__inner">
+                    <code>.rotate();</code>
+                    <pre>// CSS
+.rotate {
+    // LESS mixin
+    .t-rotate(1deg);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case scale">
+                <div class="t-test-case__inner">
+                    <code>.scale();</code>
+                    <pre>// CSS
+.scale {
+    // LESS mixin
+    .t-scale(.8);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case skew">
+                <div class="t-test-case__inner">
+                    <code>.skew();</code>
+                    <pre>// CSS
+.skew {
+    // LESS mixin
+    .t-skew(20deg);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case transition">
+                <div class="t-test-case__inner">
+                    <code>.transition();</code>
+                    <pre>// CSS
+.transition {
+    &:hover {
+
+        background: #bbb;
+    }
+    // LESS mixin
+    .transition(background .3s ease-in);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case transition-multi">
+                <div class="t-test-case__inner">
+                    <code>.transition();</code>
+                    <pre>// CSS
+.transition-multi {
+    &:hover {
+        background: #bbb;
+        color: #f00;
+    }
+    // LESS mixin
+    .transition(~"background .3s ease-in, color 1s");
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case translate">
+                <div class="t-test-case__inner">
+                    <code>.translate();</code>
+                    <pre>// CSS
+.translate {
+    // LESS mixin
+    .translate(20px, 20px);
+    &:hover {
+
+        .translate(0, 0);
+    }
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case user-select">
+                <div class="t-test-case__inner">
+                    <code>.user-select();</code>
+                    <pre>// CSS
+.user-select {
+    // LESS mixin
+    .user-select(all);
+
+    &:hover {
+
+        &:before {
+
+            content: 'no select';
+        }
+        
+        // LESS mixin
+        .user-select();
+    }
+}</pre>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
