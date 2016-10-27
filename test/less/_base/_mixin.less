@@ -1,10 +1,10 @@
 /**
  *
- * LESS BASE MIXIN
+ * LESS MIXIN
  *
  * @author      Samet Tarim
  * @copyright   (c) 2016, Samet Tarim
- * @link        http://samet-tarim.de/
+ * @link        http://samet-tarim.de/less-mixin
  * @package     MelAbu
  * @subpackage  Less mixin repository
  * @since       1.0
@@ -15,42 +15,33 @@
  */
 
 /* ************************ *
- *      @APPEARANCE         *
- * ************************ */
-.appearance(@wert: none) {
-
-    -webkit-appearance: @wert;
-    -moz-appearance: @wert;
-    appearance: @wert;
-}
-
-/* ************************ *
  *       @ANIMATION         *
  * ************************ */
 .animation(@name, @duration:3s, @delay:1s, @iteration:infinite, @direction:alternate) {
-    -webkit-animation:@arguments;
-    -moz-animation:@arguments;
-    -ms-animation:@arguments;
-    animation:@arguments;
+
+    -webkit-animation: @arguments;
+    -moz-animation: @arguments;
+    -ms-animation: @arguments;
+    animation: @arguments;
 }
 
 /* ************************ *
- *      @BOX-SIZING         *
+ *      @APPEARANCE         *
  * ************************ */
-.box-sizing(@type: border-box) {
+.appearance(@value: none) {
 
-    -webkit-box-sizing: @type;
-    -moz-box-sizing: @type;
-    box-sizing: @type;
+    -webkit-appearance: @value; // Chrome | Safari
+    -moz-appearance: @value; // Firefox
+    -ms-appearance: @value; // Internet Explorer
+    -o-appearance: @value; // Opera
+    appearance: @value; // W3C
 }
 
 /* ************************ *
  *     @BACKGROUND-SIZE     *
  * ************************ */
-.background-size(@string:cover) {
+.background-size(@string: cover) {
 
-    -webkit-box-shadow: @string;
-    -moz-box-shadow: @string;
     background-size: @string;
 }
 
@@ -115,19 +106,26 @@
 /* ************************ *
  *         @HYPENS          *
  * ************************ */
-.hyphens() {
+.hyphens(@lines: 3, @before: 2, @after: 3) {
 
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
-    -ms-hyphens: auto;
     hyphens: auto;
+
+    -webkit-hyphenate-before: @before;
+    -webkit-hyphenate-after: @after;
+    hyphenate-lines: @lines;
+
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
 }
 
 /* ************************ *
- *        @GRADIENT         *
+ *     @LINEAR-GRADIENT     *
  * ************************ */
 
-.gradient-linear(@startColor:#eee, @endColor:#ccc, @alpha:100%, @pos:to top right) {
+.gradient-linear(@startColor: #eee, @endColor: #ccc, @alpha: 100%, @pos: to top right) {
 
     /* LESS = FADE */
     @first: fade(@startColor, @alpha);
@@ -191,7 +189,7 @@
     }
 }
 
-.gradient-horizontal(@startColor:#eee, @endColor:#ccc, @coef:5%) {
+.gradient-horizontal(@startColor: #eee, @endColor: #ccc, @coef: 5%) {
 
     /* LESS = LIGHTEN - DARKEN */
     @lighten: lighten(@startColor, @coef);
@@ -223,7 +221,7 @@
     }
 }
 
-.gradient-diagonal(@startColor:#eee, @endColor: #ccc) {
+.gradient-diagonal(@startColor: #eee, @endColor: #ccc) {
 
     background-color: @startColor; /* Old browsers */
 
@@ -252,7 +250,7 @@
 /* ************************ *
  *         @OPACITY         *
  * ************************ */
-.opacity(@opacity) {
+.opacity(@opacity: .7) {
 
     @ieOpacity: @opacity * 100;
 
@@ -309,14 +307,14 @@
 }
 
 /* ************************ *
- *          @ROTATE         *
+ *  @TRANSFORM PERSPECTIVE  *
  * ************************ */
 .t-perspective(@value) {
 
-    -webkit-transform:perspective( @value );
-    -moz-transform:perspective( @value );
-    -ms-transform:perspective( @value );
-    transform:perspective( @value );
+    -webkit-transform: perspective( @value );
+    -moz-transform: perspective( @value );
+    -ms-transform: perspective( @value );
+    transform: perspective( @value );
 }
 
 /* ************************ *
@@ -324,26 +322,34 @@
  * ************************ */
 .placeholder(@value: #ccc) {
 
-    &::-webkit-input-placeholder {
-        color: @value; // Chrome, Safari, Opera
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+
+        color: @value;
     }
-    
-    &::-moz-placeholder {
-        color: @value; // Firefox 19+
+
+    &::-moz-placeholder { /* Firefox 19+ */
+
+        color: @value;
     }
-    
-    &:-ms-input-placeholder {
-        color: @value; // IE 10+
+
+    &:-ms-input-placeholder { /* IE 10+ */
+
+        color: @value;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+
+        color: @value;
     }
 }
 
 /* ************************ *
- *        @TAB_SIZE         *
+ *        @TAB-SIZE         *
  * ************************ */
 .tab-size(@int: 4) {
 
-    -moz-tab-size: @int; /* Code for Firefox */
-    -o-tab-size: @int; /* Code for Opera 10.6-12.1 */
+    -moz-tab-size: @int;
+    -o-tab-size: @int;
     tab-size: @int;
 }
 
@@ -357,47 +363,47 @@
 }
 
 /* ************************ *
- *          @ROTATE         *
+ *         @ROTATE          *
  * ************************ */
 .t-rotate(@deg) {
 
-    -webkit-transform:rotate(@deg);
-    -moz-transform:rotate(@deg);
-    -ms-transform:rotate(@deg);
-    transform:rotate(@deg);
+    -webkit-transform: rotate( @deg );
+    -moz-transform: rotate( @deg );
+    -ms-transform: rotate( @deg );
+    transform: rotate( @deg );
 }
 
 /* ************************ *
- *          @ROTATE         *
+ *        @ROTATE3D         *
  * ************************ */
 .t-rotate3d(@arguments) {
 
-    -webkit-transform:rotate3d(@arguments);
-    -moz-transform:rotate3d(@arguments);
-    -ms-transform:rotate3d(@arguments);
-    transform:rotate3d(@arguments);
+    -webkit-transform: rotate3d( @arguments );
+    -moz-transform: rotate3d( @arguments );
+    -ms-transform: rotate3d( @arguments );
+    transform: rotate3d( @arguments );
 }
 
 /* ************************ *
- *          @SCALE          *
+ *         @SCALE           *
  * ************************ */
 .t-scale(@factor) {
 
-    -webkit-transform:scale(@factor);
-    -moz-transform:scale(@factor);
-    -ms-transform:scale(@factor);
-    transform:scale(@factor);
+    -webkit-transform: scale( @factor );
+    -moz-transform: scale( @factor );
+    -ms-transform: scale( @factor );
+    transform: scale( @factor );
 }
 
 /* ************************ *
- *          @SCALE          *
+ *         @SCALE3D         *
  * ************************ */
 .t-scale3d(@factor) {
 
-    -webkit-transform:scale3d(@factor);
-    -moz-transform:scale3d(@factor);
-    -ms-transform:scale3d(@factor);
-    transform:scale3d(@factor);
+    -webkit-transform: scale3d( @factor );
+    -moz-transform: scale3d( @factor );
+    -ms-transform: scale3d( @factor );
+    transform: scale3d( @factor );
 }
 
 /* ************************ *
@@ -405,10 +411,33 @@
  * ************************ */
 .t-skew(@deg) {
 
-    -webkit-transform: skew(@deg);
-    -moz-transform: skew(@deg);
-    -ms-transform: skew(@deg);
-    transform: skew(@deg);
+    -webkit-transform: skew( @deg );
+    -moz-transform: skew( @deg );
+    -ms-transform: skew( @deg );
+    transform: skew( @deg );
+}
+
+/* ************************ *
+ *        @TRANSLATE        *
+ * ************************ */
+.t-translate(@x, @y:0) {
+
+    -webkit-transform: translate( @x, @y );
+    -moz-transform: translate( @x, @y );
+    -ms-transform: translate( @x, @y );
+    -o-transform: translate( @x, @y );
+    transform: translate( @x, @y );
+}
+
+/* ************************ *
+ *      @TRANSLATE 3D       *
+ * ************************ */
+.t-translate3d(@x, @y:0, @z:0) {
+
+    -webkit-transform: translate3d( @x, @y, @z );
+    -moz-transform: translate3d( @x, @y, @z );
+    -ms-transform: translate3d( @x, @y, @z );
+    transform: translate3d( @x, @y, @z );
 }
 
 /* ************************ *
@@ -416,55 +445,32 @@
  * ************************ */
 .transform(@string) {
 
-    -webkit-transform:@string;
-    -moz-transform:@string;
-    -ms-transform:@string;
-    transform:@string;
+    -webkit-transform: @string;
+    -moz-transform: @string;
+    -ms-transform: @string;
+    transform: @string;
 }
 
 /* ************************ *
  *    @TRANSFORM-ORIGIN     *
  * ************************ */
-.transform-origin(@x:center, @y:center) {
+.transform-origin(@x: center, @y: center) {
 
-    -webkit-transform-origin:@x @y;
-    -moz-transform-origin:@x @y;
-    -ms-transform-origin:@x @y;
-    transform-origin:@x @y;
+    -webkit-transform-origin: @x @y;
+    -moz-transform-origin: @x @y;
+    -ms-transform-origin: @x @y;
+    transform-origin: @x @y;
 }
 
 /* ************************ *
  *      @TRANSITION         *
  * ************************ */
-.transition(@transition) {
+.transition(@string) {
 
-    -webkit-transition:@transition;  
-    -moz-transition:@transition;
-    -ms-transition:@transition; 
-    transition:@transition;  
-}
-
-/* ************************ *
- *        @TRANSLATE        *
- * ************************ */
-.translate(@x, @y:0) {
-
-    -webkit-transform:translate(@x, @y);
-    -moz-transform:translate(@x, @y);
-    -ms-transform:translate(@x, @y);
-    -o-transform:translate(@x, @y);
-    transform:translate(@x, @y);
-}
-
-/* ************************ *
- *      @TRANSLATE 3D       *
- * ************************ */
-.translate3d(@x, @y:0, @z:0) {
-
-    -webkit-transform:translate3d(@x, @y, @z);
-    -moz-transform:translate3d(@x, @y, @z);
-    -ms-transform:translate3d(@x, @y, @z);
-    transform:translate3d(@x, @y, @z);
+    -webkit-transition: @string;  
+    -moz-transition: @string;
+    -ms-transition: @string; 
+    transition: @string;  
 }
 
 /* ************************ *
