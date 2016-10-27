@@ -38,7 +38,7 @@ My own less mixin repository
 
 ## Authors
 
-* **Samet Tarim** - *All works* - [MeliBu WP Sharing Social Safe](https://wordpress.org/plugins/sharing-social-safe/)
+* **Samet Tarim** - *All works* - [ProDeveloper](https://profiles.wordpress.org/prodeveloper/)
 
 ## License
 
