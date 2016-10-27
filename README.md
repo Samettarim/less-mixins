@@ -2,11 +2,11 @@
 
 My own less mixin repository for crossbrowser
 
-![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/ff.png "Firefox")
-![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/g.png "Google")
-![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/ie.png "InternetExplorer")
-![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/o.png "Opera")
-![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/s.png "Safari")
+![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/ff.gif "Firefox")
+![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/g.gif "Google")
+![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/ie.gif "InternetExplorer")
+![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/o.gif "Opera")
+![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/s.gif "Safari")
 
 > A curated list of awesome Less mixins
 
