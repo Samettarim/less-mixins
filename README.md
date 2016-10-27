@@ -1,8 +1,14 @@
 # LESS mixins crossbrowser
 
-My own less mixin repository
+My own less mixin repository for crossbrowser
 
-> A curated list of awesome MelAbu Less mixins
+![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/ff.png "Firefox")
+![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/g.png "Google")
+![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/ie.png "InternetExplorer")
+![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/o.png "Opera")
+![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/s.png "Safari")
+
+> A curated list of awesome Less mixins
 
 * [Preview](test/img/tests.png)
 
@@ -34,9 +40,15 @@ My own less mixin repository
 * [translate3d](partials/_translate3d.less)
 * [user-select](partials/_user-select.less)
 
+## Contribute
+
+Please [file an issue](https://github.com/Samettarim/less-mixins/issues) if you
+think something could be improved. Please submit Pull Requests when ever
+possible.
+
 ## Built with
 
-* [NetBeans](https://netbeans.org/) - NetBeans editor
+* [NetBeans](https://netbeans.org/) - NetBeans editor for error-free code
 
 ## Authors
 
