@@ -5,9 +5,7 @@
 
     @ieOpacity: @opacity * 100;
 
-    -webkit-opacity: @opacity; /* Chrome, Safari 5.4 */
-    -ms-opacity: @opacity; /* IE 10+ */
-    opacity: @opacity; /* W3C, ab Opera 9.0, ab Firefox 0.9 (1.7), ab Chrome 1.0, ab Safari 1.2, WebKit 125, ab Konqueror 4.0 */
+    opacity: @opacity; /* W3C | Opera 9.0 | Firefox 2.0 | Chrome 4.0 | Safari 3.1 */
 
     .ie5x & {
         filter: ~"progid:DXImageTransform.Microsoft.Alpha(@{ieOpacity})"; /* IE 5.5 - later */

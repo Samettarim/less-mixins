@@ -3,15 +3,15 @@
  * ************************ */
 .column(@count:2, @gap:40px, @rule:4px dotted #222) {
 
-    -webkit-column-count: @count;
-    -moz-column-count: @count;
-    column-count: @count;
+    -webkit-column-count: @count; // Chrome 50.0 none 4.0 -webkit- | Safari 9.0 none  3.1 -webkit-
+    -moz-column-count: @count; // Firefox 2.0 -moz-
+    column-count: @count; // Opera 37.0 none 11.1 none 15.0 -webkit- | IE 10.0
 
-    -webkit-column-gap: @gap;
-    -moz-column-gap: @gap;
-    column-gap: @gap;
+    -webkit-column-gap: @gap; // Chrome 50.0 none 4.0 -webkit- | Safari 9.0 none  3.1 -webkit-
+    -moz-column-gap: @gap; // Firefox 2.0 -moz-
+    column-gap: @gap; // Opera 37.0 none 11.1 none 15.0 -webkit- | IE 10.0
 
-    -webkit-column-rule: @rule;
-    -moz-column-rule: @rule;
-    column-rule: @rule;
+    -webkit-column-rule: @rule; // Chrome 50.0 none 4.0 -webkit- | Safari 9.0 none  3.1 -webkit-
+    -moz-column-rule: @rule; // Firefox 2.0 -moz-
+    column-rule: @rule; // Opera 37.0 none 11.1 none 15.0 -webkit- | IE 10.0
 }
