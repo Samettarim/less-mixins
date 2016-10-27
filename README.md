@@ -1,5 +1,9 @@
 # LESS mixins crossbrowser
 
+![alt text](https://img.shields.io/badge/build-passing-brightgreen.svg "Build passing")
+![alt text](https://img.shields.io/badge/less-2.6.0%20tested-brightgreen.svg "Less tested 2.6.0")
+![alt text](https://img.shields.io/badge/tests-1%2F1-blue.svg "Tests 1/1")
+
 My own less mixin repository for crossbrowser
 
 ![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/ff.gif "Firefox")
