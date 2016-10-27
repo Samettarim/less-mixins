@@ -1,8 +1,19 @@
 /* ************************ *
  *         @HYPENS          *
  * ************************ */
-.hyphens() {
 
-    -webkit-hyphens: auto; // Chrome NO SUPPORT | Safari 9.1 -webkit-
-    hyphens: auto; // Opera NO SUPPORT | IE 11.0 | Firefox 47.0
+.hyphens(@before: 2, @after: 3, @lines: 3) {
+
+    // Chrome NO SUPPORT | Opera NO SUPPORT
+    -webkit-hyphens: auto; // Safari 9.1 -webkit-
+    -moz-hyphens: auto; // Firefox
+    hyphens: auto; // IE 11.0 | Firefox 47.0
+
+    -webkit-hyphenate-before: @before;
+    -webkit-hyphenate-after: @after;
+    hyphenate-lines: @lines; // W3C
+
+    -ms-word-break: break-all; // IE
+    word-break: break-all; // W3C
+    word-break: break-word; // W3C
 }

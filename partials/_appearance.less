@@ -1,9 +1,12 @@
 /* ************************ *
  *      @APPEARANCE         *
  * ************************ */
+
 .appearance(@value: none) {
 
-    -webkit-appearance: @value;
-    -moz-appearance: @value;
-    appearance: @value;
+    -webkit-appearance: @value; // Chrome | Safari
+    -moz-appearance: @value; // Firefox
+    -ms-appearance: @value; // Internet Explorer
+    -o-appearance: @value; // Opera
+    appearance: @value; // W3C
 }

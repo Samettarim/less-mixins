@@ -1,9 +1,11 @@
 /* ************************ *
  *       @ANIMATION         *
  * ************************ */
+
 .animation(@name, @duration:3s, @delay:1s, @iteration:infinite, @direction:alternate) {
     
-    -webkit-animation: @arguments;
-    -moz-animation: @arguments;
-    animation: @arguments;
+    -webkit-animation: @arguments; // Chrome 4.0 -webkit- | Safari 4.0 -webkit-
+    -moz-animation: @arguments; // Firefox 5.0 -moz-
+    -o-animation: @arguments; // Opera 15.0 -webkit- | 12.0 -o-
+    animation: @arguments; // Chrome 43.0 | IE 10.0 | FF 16.0 | Opera 30.0 | Safari 9.0
 }

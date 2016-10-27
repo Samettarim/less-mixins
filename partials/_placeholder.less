@@ -1,20 +1,26 @@
 /* ************************ *
  *      @PLACEHOLDER        *
  * ************************ */
+
 .placeholder(@value: #ccc) {
 
-    &::-webkit-input-placeholder {
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
         
-        color: @value; // Chrome, Safari, Opera
+        color: @value;
     }
     
-    &::-moz-placeholder {
+    &::-moz-placeholder { /* Firefox 19+ */
         
-        color: @value; // Firefox 19+
+        color: @value;
     }
     
-    &:-ms-input-placeholder {
+    &:-ms-input-placeholder { /* IE 10+ */
         
-        color: @value; // IE 10+
+        color: @value;
+    }
+    
+    &:-moz-placeholder { /* Firefox 18- */
+        
+        color: @value;
     }
 }
