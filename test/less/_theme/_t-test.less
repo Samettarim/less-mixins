@@ -20,6 +20,7 @@
     &__inner {
 
         padding: 1em;
+        .box-sizing();
     }
 }
 
@@ -50,7 +51,8 @@ code {
 
 .background-size {
 
-    .background-size(100px auto);
+    background: transparent url(../img/html5.png) center center no-repeat;
+    .background-size(cover);
 }
 
 .border-radius {
@@ -71,7 +73,7 @@ code {
     .box-shadow(~"inset 5px 5px 10px #333, 5px 5px 10px 5px #aaa");
 }
 
-.box-sizing {
+.box-sizings {
 
     width: 100%;
     padding: 0 100px 0 0;
