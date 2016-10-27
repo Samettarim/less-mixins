@@ -4,9 +4,9 @@
 
 .perspective(@value) {
 
-    -webkit-perspective: @value;
-    -moz-perspective: @value;
-    perspective: @value;
+    -webkit-perspective: @value; /* Chrome 12.0 -webkit- | Safari 4.0.3 -webkit- | Opera 15.0 -webkit- */
+    -moz-perspective: @value; /* Firefox 10.0 -moz- */
+    perspective: @value; /* Chrome 36.0 | IE 10.0 | Firefox 16.0 | Safari 9.0 | Opera 23.0 */
 }
 
 .perspective-origin(@value) {
@@ -14,28 +14,4 @@
     -webkit-perspective-origin: @value;
     -moz-perspective-origin: @value;
     perspective-origin: @value;
-}
-
-.perspective-x(@value, @rotate) {
-
-    -webkit-transform: perspective( @value ) rotateX( @rotate );
-    -moz-transform: perspective( @value ) rotateX( @rotate );
-    -ms-transform: perspective( @value ) rotateX( @rotate );
-    transform: perspective( @value ) rotateX( @rotate );
-}
-
-.perspective-y(@value, @rotate) {
-
-    -webkit-transform: perspective( @value ) rotateY( @rotate );
-    -moz-transform: perspective( @value ) rotateY( @rotate );
-    -ms-transform: perspective( @value ) rotateY( @rotate );
-    transform: perspective( @value ) rotateY( @rotate );
-}
-
-.t-perspective(@value) {
-
-    -webkit-transform:perspective( @value );
-    -moz-transform:perspective( @value );
-    -ms-transform:perspective( @value );
-    transform:perspective( @value );
 }

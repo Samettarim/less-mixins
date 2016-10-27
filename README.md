@@ -39,6 +39,7 @@ My own less mixin repository for crossbrowser
 * [.transform()](partials/_transform.less)
 * [.transition()](partials/_transition.less)
 * [.user-select()](partials/_user-select.less)
+* [.user-selection()](partials/_user-select.less)
 
 ## Usage
 
