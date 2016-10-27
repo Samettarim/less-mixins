@@ -10,7 +10,7 @@ My own less mixin repository for crossbrowser
 
 > A curated list of awesome Less mixins
 
-* [Preview](test/img/tests.png)
+* [Tests Preview](test/img/tests.png)
 
 ### This repository has some Less-Mixins for you:
 
