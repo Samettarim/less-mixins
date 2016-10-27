@@ -1,7 +1,3 @@
-{
-  "language": "ruby",
-  "group": "stable",
-  "dist": "precise",
-  "os": "linux"
-}
-
+- language: css
+- less: 
+  - "2.6.0"
