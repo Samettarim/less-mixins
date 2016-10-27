@@ -34,10 +34,10 @@ My own less mixin repository for crossbrowser
 * [.t-scale()](partials/_transform-scale.less)
 * [.t-scale3d()](partials/_transform-scale3d.less)
 * [.t-skew()](partials/_transform-skew.less)
+* [.t-translate()](partials/_transform-translate.less)
+* [.t-translate3d()](partials/_transform-translate3d.less)
 * [.transform()](partials/_transform.less)
 * [.transition()](partials/_transition.less)
-* [.translate()](partials/_translate.less)
-* [.translate3d()](partials/_translate3d.less)
 * [.user-select()](partials/_user-select.less)
 
 ## Usage
