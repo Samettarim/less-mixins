@@ -40,6 +40,11 @@ My own less mixin repository for crossbrowser
 * [translate3d](partials/_translate3d.less)
 * [user-select](partials/_user-select.less)
 
+### General Usage
+
+In general you should include the file `mixin.less` in `build` into your
+project and use the mixins as suggested in the docs for each mixin.
+
 ## Contribute
 
 Please [file an issue](https://github.com/Samettarim/less-mixins/issues) if you
