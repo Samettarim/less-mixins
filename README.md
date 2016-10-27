@@ -45,6 +45,12 @@ My own less mixin repository for crossbrowser
 In general you should include the file `mixin.less` in `build` into your
 project and use the mixins as suggested in the docs for each mixin.
 
+## Usage
+
+```ruby
+@import 'your-less-folder/mixin.less';
+```
+
 ## Contribute
 
 Please [file an issue](https://github.com/Samettarim/less-mixins/issues) if you
