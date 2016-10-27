@@ -1,7 +1,5 @@
 # LESS mixins crossbrowser
 
-[![Build Status](https://travis-ci.org/Samettarim/less-mixins.svg?branch=master)](https://travis-ci.org/Samettarim/less-mixins)
-
 My own less mixin repository for crossbrowser
 
 ![alt text](https://github.com/Samettarim/less-mixins/blob/master/test/img/ff.gif "Firefox")
