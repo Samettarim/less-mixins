@@ -40,15 +40,25 @@ My own less mixin repository for crossbrowser
 * [translate3d](partials/_translate3d.less)
 * [user-select](partials/_user-select.less)
 
+## Usage
+
 ### General Usage
 
-In general you should include the file `mixin.less` in `build` into your
-project and use the mixins as suggested in the docs for each mixin.
+In general you should include the file `mixin.less` in `build` into your 
+project less folder structur and use the mixins as suggested in the docs for each mixin.
 
-## Usage
+###### @import
 
 ```ruby
 @import 'your-less-folder/mixin.less';
+```
+
+#### Example
+
+```ruby
+@import 'your-less-folder/mixin.less';
+@import 'your-less-folder/base.less';
+@import 'your-less-folder/layout.less';
 ```
 
 ## Contribute
