@@ -11,21 +11,45 @@
         <div class="l-test-wrap">
             <h1>LESS-Mixins (crossbrowser)</h1>
 
-            <!--            <div class="t-test-case animation">
-                            <div class="t-test-case__inner">
-                                <code>.animation-keyframes();</code>
-                                <pre>// CSS
-            .animation {
-                // LESS mixin
-                .animation(colors);
-                .animation-keyframes (colors, red, blue);
-            }</pre>
-                            </div>
-                        </div>-->
+            <div class="t-test-case animate">
+                <div class="t-test-case__inner">
+                    <code>.animation(@name, @duration:3s, @delay:1s, @iteration:infinite, @direction:alternate);</code>
+                    <pre>// CSS
+@-webkit-keyframes animations {
+    from {width: 512px;}
+    to {width: 100%;}
+}
+
+@-moz-keyframes animations {
+    from {width: 512px;}
+    to {width: 100%;}
+}
+
+@-ms-keyframes animations {
+    from {width: 512px;}
+    to {width: 100%;}
+}
+
+@-o-keyframes animations {
+    from {width: 512px;}
+    to {width: 100%;}
+}
+
+@keyframes animations {
+    from {width: 512px;}
+    to {width: 100%;}
+}
+
+.animate {
+    // LESS mixin
+    .animation(animations);
+}</pre>
+                </div>
+            </div>
 
             <div class="t-test-case">
                 <div class="t-test-case__inner">
-                    <code>.appearance();</code>
+                    <code>.appearance(@value: none);</code>
                     <pre>// CSS
 .appearance {
     // LESS mixin
@@ -35,20 +59,9 @@
                 <span class="appearance">button</span>
             </div>
 
-            <div class="t-test-case border-radius">
-                <div class="t-test-case__inner">
-                    <code>.border-radius();</code>
-                    <pre>// CSS
-.border-radius {
-    // LESS mixin
-    .border-radius(20px 10px);
-}</pre>
-                </div>
-            </div>
-
             <div class="t-test-case background-size">
                 <div class="t-test-case__inner">
-                    <code>.background-size();</code>
+                    <code>.background-size(@string: cover);</code>
                     <pre>// CSS
 .background-size {
     background: transparent url(../img/html5.png) center center no-repeat;
@@ -58,9 +71,20 @@
                 </div>
             </div>
 
+            <div class="t-test-case border-radius">
+                <div class="t-test-case__inner">
+                    <code>.border-radius(@radius: 5px);</code>
+                    <pre>// CSS
+.border-radius {
+    // LESS mixin
+    .border-radius(20px 10px);
+}</pre>
+                </div>
+            </div>
+
             <div class="t-test-case box-shadow">
                 <div class="t-test-case__inner">
-                    <code>.box-shadow();</code>
+                    <code>.box-shadow(@string: 0 1px 3px rgba(0,0,0,.03));</code>
                     <pre>// CSS
 .box-shadow {
     padding: 1em;
@@ -72,7 +96,7 @@
 
             <div class="t-test-case box-shadow-multi">
                 <div class="t-test-case__inner">
-                    <code>.box-shadow();</code>
+                    <code>.box-shadow(@string: 0 1px 3px rgba(0,0,0,.03));</code>
                     <pre>// CSS
 .box-shadow-multi {
     padding: 1em;
@@ -84,7 +108,7 @@
 
             <div class="t-test-case box-sizings">
                 <div class="t-test-case__inner">
-                    <code>.box-sizing();</code>
+                    <code>.box-sizing(@type: border-box);</code>
                     <pre>// CSS
 .box-sizings {
     width: 100%;
@@ -97,7 +121,7 @@
 
             <div class="t-test-case">
                 <div class="t-test-case__inner">
-                    <code>.column();</code>
+                    <code>.column(@count:2, @gap:40px, @rule:4px dotted #222);</code>
                     <pre>// CSS
 .column {
     // LESS mixin
@@ -109,7 +133,7 @@
                     Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
                 </p>
                 <div class="t-test-case__inner">
-                    <code>.column();</code>
+                    <code>.column(@count:2, @gap:40px, @rule:4px dotted #222);</code>
                     <pre>// CSS
 .column-1 {
     // LESS mixin
@@ -147,53 +171,9 @@
                 <div class="l-clear"></div>
             </div>
 
-            <div class="t-test-case gradient-linear">
-                <div class="t-test-case__inner">
-                    <code>.gradient-linear();</code>
-                    <pre>// CSS
-.gradient-linear {
-    // LESS mixin
-    .gradient-linear(#ccc, #fff);
-}</pre>
-                </div>
-            </div>
-
-            <div class="t-test-case gradient-vertical">
-                <div class="t-test-case__inner">
-                    <code>.gradient-vertical();</code>
-                    <pre>// CSS
-.gradient-vertical {
-    // LESS mixin
-    .gradient-vertical(#ccc, #fff);
-}</pre>
-                </div>
-            </div>
-
-            <div class="t-test-case gradient-horizontal">
-                <div class="t-test-case__inner">
-                    <code>.gradient-horizontal();</code>
-                    <pre>// CSS
-.gradient-horizontal {
-    // LESS mixin
-    .gradient-horizontal(#ccc, #fff);
-}</pre>
-                </div>
-            </div>
-
-            <div class="t-test-case gradient-diagonal">
-                <div class="t-test-case__inner">
-                    <code>.gradient-diagonal();</code>
-                    <pre>// CSS
-.gradient-diagonal {
-    // LESS mixin
-    .gradient-diagonal(#ccc, #fff);
-}</pre>
-                </div>
-            </div>
-
             <div class="t-test-case hyphens" lang="en">
                 <div class="t-test-case__inner">
-                    <code>.hypens();</code>
+                    <code>.hypens(@value: auto);</code>
                     <pre>.hyphens {
     max-width: 500px;
     margin: 0 auto;
@@ -211,9 +191,53 @@
                 </p>
             </div>
 
+            <div class="t-test-case gradient-linear">
+                <div class="t-test-case__inner">
+                    <code>.gradient-linear(@startColor: #eee, @endColor: #ccc, @alpha: 100%, @pos: to top right);</code>
+                    <pre>// CSS
+.gradient-linear {
+    // LESS mixin
+    .gradient-linear(#ccc, #fff);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case gradient-vertical">
+                <div class="t-test-case__inner">
+                    <code>.gradient-vertical(@startColor: #eee, @endColor: #ccc, @coef: 5%);</code>
+                    <pre>// CSS
+.gradient-vertical {
+    // LESS mixin
+    .gradient-vertical(#ccc, #fff);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case gradient-horizontal">
+                <div class="t-test-case__inner">
+                    <code>.gradient-horizontal(@startColor: #eee, @endColor: #ccc, @coef: 5%);</code>
+                    <pre>// CSS
+.gradient-horizontal {
+    // LESS mixin
+    .gradient-horizontal(#ccc, #fff);
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case gradient-diagonal">
+                <div class="t-test-case__inner">
+                    <code>.gradient-diagonal(@startColor: #eee, @endColor: #ccc);</code>
+                    <pre>// CSS
+.gradient-diagonal {
+    // LESS mixin
+    .gradient-diagonal(#ccc, #fff);
+}</pre>
+                </div>
+            </div>
+
             <div class="t-test-case opacity">
                 <div class="t-test-case__inner">
-                    <code>.opacity();</code>
+                    <code>.opacity(@opacity: .7);</code>
                     <pre>// CSS
 .opacity {
     // LESS mixin
@@ -224,7 +248,7 @@
 
             <div class="t-test-case perspective-x">
                 <div class="t-test-case__inner">
-                    <code>.perspective-x();</code>
+                    <code>.perspective-x(@value, @rotate);</code>
                     <pre>// CSS
 .perspective-x {
     // LESS mixin
@@ -235,7 +259,7 @@
 
             <div class="t-test-case perspective-y">
                 <div class="t-test-case__inner">
-                    <code>.perspective-y();</code>
+                    <code>.perspective-y(@value, @rotate);</code>
                     <pre>// CSS
 .perspective-y {
     // LESS mixin
@@ -246,7 +270,7 @@
 
             <div class="t-test-case">
                 <div class="t-test-case__inner">
-                    <code>.placeholder();</code>
+                    <code>.placeholder(@value: #ccc);</code>
                     <pre>// CSS
 .placeholder {
     // LESS mixin
@@ -256,32 +280,9 @@
                 <input class="placeholder" name="name" placeholder="Enter yout name" type="text" />
             </div>
 
-            <div class="t-test-case transform">
-                <div class="t-test-case__inner">
-                    <code>.transform();</code>
-                    <pre>// CSS
-.transform {
-    // LESS mixin
-    .transform(translate(-40px,0));
-}</pre>
-                </div>
-            </div>
-
-            <div class="t-test-case transform-multi">
-                <div class="t-test-case__inner">
-                    <code>.transform();</code>
-                    <pre>// CSS
-.transform {
-    // LESS mixin
-    .transform(~"rotate(-2deg) translate(-40px,0)");
-}</pre>
-                </div>
-            </div>
-
-
             <div class="t-test-case rotate">
                 <div class="t-test-case__inner">
-                    <code>.rotate();</code>
+                    <code>.t-rotate(@deg);</code>
                     <pre>// CSS
 .rotate {
     // LESS mixin
@@ -292,7 +293,7 @@
 
             <div class="t-test-case scale">
                 <div class="t-test-case__inner">
-                    <code>.scale();</code>
+                    <code>.t-scale(@factor);</code>
                     <pre>// CSS
 .scale {
     // LESS mixin
@@ -303,7 +304,7 @@
 
             <div class="t-test-case skew">
                 <div class="t-test-case__inner">
-                    <code>.skew();</code>
+                    <code>.t-skew(@deg);</code>
                     <pre>// CSS
 .skew {
     // LESS mixin
@@ -312,9 +313,31 @@
                 </div>
             </div>
 
+            <div class="t-test-case transform">
+                <div class="t-test-case__inner">
+                    <code>.transform(@string);</code>
+                    <pre>// CSS
+.transform {
+    // LESS mixin
+    .transform(translate(-40px,0));
+}</pre>
+                </div>
+            </div>
+
+            <div class="t-test-case transform-multi">
+                <div class="t-test-case__inner">
+                    <code>.transform(@string);</code>
+                    <pre>// CSS
+.transform {
+    // LESS mixin
+    .transform(~"rotate(-2deg) translate(-40px,0)");
+}</pre>
+                </div>
+            </div>
+
             <div class="t-test-case transition">
                 <div class="t-test-case__inner">
-                    <code>.transition();</code>
+                    <code>.transition(@string);</code>
                     <pre>// CSS
 .transition {
     &:hover {
@@ -329,7 +352,7 @@
 
             <div class="t-test-case transition-multi">
                 <div class="t-test-case__inner">
-                    <code>.transition();</code>
+                    <code>.transition(@string);</code>
                     <pre>// CSS
 .transition-multi {
     &:hover {
@@ -344,7 +367,7 @@
 
             <div class="t-test-case translate">
                 <div class="t-test-case__inner">
-                    <code>.translate();</code>
+                    <code>.translate(@x, @y:0);</code>
                     <pre>// CSS
 .translate {
     // LESS mixin
@@ -359,7 +382,7 @@
 
             <div class="t-test-case user-select">
                 <div class="t-test-case__inner">
-                    <code>.user-select();</code>
+                    <code>.user-select(@string: none);</code>
                     <pre>// CSS
 .user-select {
     // LESS mixin

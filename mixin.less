@@ -26,21 +26,23 @@
 }
 
 /* ************************ *
+ *      @APPEARANCE         *
+ * ************************ */
+.appearance(@value: none) {
+
+    -webkit-appearance: @value; // Chrome | Safari
+    -moz-appearance: @value; // Firefox
+    -ms-appearance: @value; // Internet Explorer
+    -o-appearance: @value; // Opera
+    appearance: @value; // W3C
+}
+
+/* ************************ *
  *     @BACKGROUND-SIZE     *
  * ************************ */
 .background-size(@string: cover) {
 
     background-size: @string;
-}
-
-/* ************************ *
- *      @BOX-SIZING         *
- * ************************ */
-.box-sizing(@type: border-box) {
-
-    -webkit-box-sizing: @type;
-    -moz-box-sizing: @type;
-    box-sizing: @type;
 }
 
 /* ************************ *
@@ -321,22 +323,22 @@
 .placeholder(@value: #ccc) {
 
     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        
+
         color: @value;
     }
-    
+
     &::-moz-placeholder { /* Firefox 19+ */
-        
+
         color: @value;
     }
-    
+
     &:-ms-input-placeholder { /* IE 10+ */
-        
+
         color: @value;
     }
-    
+
     &:-moz-placeholder { /* Firefox 18- */
-        
+
         color: @value;
     }
 }
@@ -440,12 +442,12 @@
 /* ************************ *
  *      @TRANSITION         *
  * ************************ */
-.transition(@transition) {
+.transition(@string) {
 
-    -webkit-transition: @transition;  
-    -moz-transition: @transition;
-    -ms-transition: @transition; 
-    transition: @transition;  
+    -webkit-transition: @string;  
+    -moz-transition: @string;
+    -ms-transition: @string; 
+    transition: @string;  
 }
 
 /* ************************ *

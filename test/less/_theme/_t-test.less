@@ -24,6 +24,31 @@
     }
 }
 
+@-webkit-keyframes animations {
+    from {width: 80%;}
+    to {width: 100%;}
+}
+
+@-moz-keyframes animations {
+    from {width: 80%;}
+    to {width: 100%;}
+}
+
+@-ms-keyframes animations {
+    from {width: 80%;}
+    to {width: 100%;}
+}
+
+@-o-keyframes animations {
+    from {width: 80%;}
+    to {width: 100%;}
+}
+
+@keyframes animations {
+    from {width: 80%;}
+    to {width: 100%;}
+}
+
 pre {
 
     border: 1px solid #d1d1d1;
@@ -44,6 +69,11 @@ code {
     font-family: @font-code;
 }
 
+.animate {
+
+    .animation(animations);
+}
+
 .appearance {
 
     .appearance(button);
@@ -52,7 +82,7 @@ code {
 .background-size {
 
     background: transparent url(../img/html5.png) center center no-repeat;
-    .background-size(cover);
+    .background-size(100px auto);
 }
 
 .border-radius {
