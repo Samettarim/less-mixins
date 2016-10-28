@@ -4,7 +4,7 @@
  *
  * @author      Samet Tarim
  * @copyright   (c) 2016, Samet Tarim
- * @link        http://samet-tarim.de/less-mixin
+ * @link        http://samet-tarim.de/less-mixins
  * @package     MelAbu
  * @subpackage  Less mixin repository
  * @since       1.0
@@ -13,6 +13,20 @@
  * @see         https://msdn.microsoft.com/en-us/library/ms530752%28v=vs.85%29.aspx
  * @see         https://developer.mozilla.org/de/docs/Web/CSS/filter
  */
+
+/* ************************ *
+ *         @Fonts           *
+ * ************************ */
+@font:          ~'Helvetica Neue', 'Verdana', 'Helvetica', 'Arial', Sans-Serif;
+@font-code:     ~'Consolas', 'Andale Mono', 'Monotype.com', 'Lucida Console', 'Monospace', Serif;
+
+/* ************************ *
+ *      @BREAKPOINTS        *
+ * ************************ */
+@mobile:      ~"only screen and (max-width: 529px)";
+@tablet:      ~"only screen and (min-width: 530px) and (max-width: 949px)";
+@desktop:     ~"only screen and (min-width: 950px) and (max-width: 1128px)";
+@desktop-xl:  ~"only screen and (min-width: 1129px)";
 
 /* ************************ *
  *       @ANIMATION         *

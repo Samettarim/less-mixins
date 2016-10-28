@@ -48,7 +48,8 @@ My own less mixin repository for crossbrowser
 
 ###### @media
 
-* [breakpoints](partials/_breakpoints.less)
+* [breakpoint](partials/_breakpoints.less)
+* [font](partials/_font.less)
 
 ## Usage
 
