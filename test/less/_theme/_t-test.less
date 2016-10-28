@@ -65,10 +65,17 @@ pre {
 
 code {
 
+    overflow: scroll;
+    display: block;
+    width: 100%;
     background: #eaeaea;
     background: rgba(0,0,0,0.07);
     font-size: 13px;
     font-family: @font-code;
+    white-space: pre-wrap;
+    white-space: pre;
+    
+    .box-sizing();
 }
 
 .animate {
@@ -112,6 +119,25 @@ code {
     border: 1px solid #eee;
 
     .box-sizing();
+}
+
+.breakpoints {
+    
+    @media @mobile {
+      background: orange;
+    }
+    @media @tablet {
+      background: purple;
+    }
+    @media @desktop {
+      background: green;
+    }
+    @media @desktop-xl {
+      background: lightblue;
+    }
+    @media @desktop, @desktop-xl {
+      color: black;
+    }
 }
 
 .column {

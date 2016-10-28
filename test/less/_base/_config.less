@@ -10,14 +10,20 @@
  * @since       1.0
  */
 
-// Fonts (global)
+/* Fonts (global) */
 @font: 'Helvetica Neue', 'Verdana', 'Helvetica', 'Arial', Sans-Serif;
 @font-code: 'Consolas', 'Andale Mono', 'Monotype.com', 'Lucida Console', 'Monospace', Serif;
 
-// Colors (global)
+/* Colors (global) */
 @white: #fff;
 @black: #000;
  
-// Naming (specific)
+/* Naming (specific) */
 @btn-bgcolor: @white;
 @btn-fontcolor: @black;
+
+/* Breakpoints */
+@mobile:      ~"only screen and (max-width: 529px)";
+@tablet:      ~"only screen and (min-width: 530px) and (max-width: 949px)";
+@desktop:     ~"only screen and (min-width: 950px) and (max-width: 1128px)";
+@desktop-xl:  ~"only screen and (min-width: 1129px)";

@@ -1,7 +1,39 @@
-/* ************************ *
- *       @ANIMATION         *
- * ************************ */
-
+/**
+ * @ANIMATION         
+ * 
+ * Example:
+ * 
+ * @-webkit-keyframes animations {
+ *     from {width: 512px;}
+ *     to {width: 100%;}
+ * }
+ * 
+ * @-moz-keyframes animations {
+ *     from {width: 512px;}
+ *     to {width: 100%;}
+ * }
+ * 
+ * @-ms-keyframes animations {
+ *     from {width: 512px;}
+ *     to {width: 100%;}
+ * }
+ * 
+ * @-o-keyframes animations {
+ *     from {width: 512px;}
+ *     to {width: 100%;}
+ * }
+ * 
+ * @keyframes animations {
+ *     from {width: 512px;}
+ *     to {width: 100%;}
+ * }
+ *
+ * // CSS class
+ * .animate {
+ *     // LESS mixin
+ *     .animation(animations);
+ * }
+ */
 .animation(@name, @duration:3s, @delay:1s, @iteration:infinite, @direction:alternate) {
     
     -webkit-animation: @arguments; /* Chrome 4.0 -webkit- | Safari 4.0 -webkit- */

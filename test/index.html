@@ -119,6 +119,34 @@
                 </div>
             </div>
 
+            <div class="t-test-case breakpoints">
+                <div class="t-test-case__inner">
+                    <code>@mobile:      ~"only screen and (max-width: 529px)";</code><br /><br />
+                    <code>@tablet:      ~"only screen and (min-width: 530px) and (max-width: 949px)";</code><br /><br />
+                    <code>@desktop:     ~"only screen and (min-width: 950px) and (max-width: 1128px)";</code><br /><br />
+                    <code>@desktop-xl:  ~"only screen and (min-width: 1129px)";</code>
+                    <pre>// CSS
+.breakpoints {
+    
+    @media @mobile { // LESS @mobile
+      background: orange;
+    }
+    @media @tablet { // LESS @tablet
+      background: purple;
+    }
+    @media @desktop { // LESS @desktop
+      background: green;
+    }
+    @media @desktop-xl { // LESS @desktop-xl
+      background: blue;
+    }
+    @media @desktop, @desktop-xl { // LESS @desktop and @desktop-xl
+      color: black;
+    }
+}</pre>
+                </div>
+            </div>
+
             <div class="t-test-case">
                 <div class="t-test-case__inner">
                     <code>.column(@count:2, @gap:40px, @rule:4px dotted #222);</code>
