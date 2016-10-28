@@ -1,4 +1,4 @@
-# LESS mixins crossbrowser
+# LESS MIXINS (crossbrowser)
 
 ![alt text](https://img.shields.io/badge/build-passing-brightgreen.svg "Build passing")
 ![alt text](https://img.shields.io/badge/less-2.6.0%20tested-brightgreen.svg "Less tested 2.6.0")
@@ -18,6 +18,8 @@ My own less mixin repository for crossbrowser
 * [Tests Preview](test/img/tests.png)
 
 ### This repository has some Less-Mixins for you:
+
+###### @mixins
 
 * [.animation()](partials/_animation.less)
 * [.appearance()](partials/_appearance.less)
@@ -46,9 +48,9 @@ My own less mixin repository for crossbrowser
 * [.user-select()](partials/_user-select.less)
 * [.user-selection()](partials/_user-select.less)
 
-###### @media
+###### @extra
 
-* [breakpoint](partials/_breakpoints.less)
+* [breakpoint](partials/_breakpoint.less)
 * [font](partials/_font.less)
 
 ## Usage
@@ -60,16 +62,18 @@ project less folder structur and use the mixins as suggested in the docs for eac
 
 ###### @import
 
-```ruby
+```less
 @import 'your-less-folder/mixin.less';
 ```
 
-#### Example
+###### @use
 
-```ruby
-@import 'your-less-folder/mixin.less';
-@import 'your-less-folder/base.less';
-@import 'your-less-folder/layout.less';
+```less
+.class {
+    
+    .box-shadow();
+    .box-sizing();
+}
 ```
 
 ## Contribute
