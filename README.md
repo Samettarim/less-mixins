@@ -1,7 +1,7 @@
 # LESS MIXINS (crossbrowser)
 
 ![Language](https://img.shields.io/github/languages/top/prod3v3loper/less-mixins.svg?style=flat "Language")
-![Code size](https://img.shields.io/github/size/prod3v3loper/less-mixins/mixin.less.svg?style=flat "Mixin size")
+[![Mixin size](https://img.shields.io/github/size/prod3v3loper/less-mixins/mixin.less.svg?style=flat "Mixin size")](https://github.com/prod3v3loper/less-mixins/blob/master/mixin.less)
 ![Code size](https://img.shields.io/github/languages/code-size/prod3v3loper/less-mixins.svg?style=flat "Code size")
 ![Repo size](https://img.shields.io/github/repo-size/prod3v3loper/less-mixins.svg?style=flat "Repo size")
 ![License](https://img.shields.io/github/license/prod3v3loper/less-mixins.svg?style=flat "License")
