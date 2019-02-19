@@ -1,11 +1,11 @@
 # LESS MIXINS (crossbrowser)
 
-![alt text](https://img.shields.io/badge/build-passing-brightgreen.svg "Build passing")
-![alt text](https://img.shields.io/badge/less-2.6.0%20tested-brightgreen.svg "Less tested 2.6.0")
-![alt text](https://img.shields.io/badge/license-CCO-blue.svg "CCO 1.0")
-![alt text](https://img.shields.io/badge/tests-1%2F1-blue.svg "Tests 1/1")
+![Language](https://img.shields.io/github/languages/top/prod3v3loper/less-mixins.svg?style=flat "Language")
+![Code size](https://img.shields.io/github/languages/code-size/prod3v3loper/less-mixins.svg?style=flat "Code size")
+![Repo size](https://img.shields.io/github/repo-size/prod3v3loper/less-mixins.svg?style=flat "Repo size")
+![License](https://img.shields.io/github/license/prod3v3loper/less-mixins.svg?style=flat "License")
 
-My own less mixin repository for crossbrowser
+LESS mixin repository for crossbrowser
 
 ![alt text](https://github.com/prod3v3loper/less-mixins/blob/master/test/img/ff.gif "Firefox")
 ![alt text](https://github.com/prod3v3loper/less-mixins/blob/master/test/img/g.gif "Google")
