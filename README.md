@@ -1,6 +1,7 @@
 # LESS MIXINS (crossbrowser)
 
 ![Language](https://img.shields.io/github/languages/top/prod3v3loper/less-mixins.svg?style=flat "Language")
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/efa65cea683f45e9b92aeaf4d2c9ae8e)](https://www.codacy.com/app/prod3v3loper/less-mixins?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=prod3v3loper/less-mixins&amp;utm_campaign=Badge_Grade)
 [![Mixin size](https://img.shields.io/github/size/prod3v3loper/less-mixins/mixin.less.svg?style=flat "Mixin size")](https://github.com/prod3v3loper/less-mixins/blob/master/mixin.less)
 ![Code size](https://img.shields.io/github/languages/code-size/prod3v3loper/less-mixins.svg?style=flat "Code size")
 ![Repo size](https://img.shields.io/github/repo-size/prod3v3loper/less-mixins.svg?style=flat "Repo size")
