@@ -1,3 +1,5 @@
+<div align="center">
+
 # LESS MIXINS (crossbrowser)
 
 ![Language](https://img.shields.io/github/languages/top/prod3v3loper/less-mixins.svg?style=flat "Language")
@@ -9,17 +11,19 @@
 
 LESS mixin repository for crossbrowser
 
-![alt text](https://github.com/prod3v3loper/less-mixins/blob/master/test/img/ff.gif "Firefox")
-![alt text](https://github.com/prod3v3loper/less-mixins/blob/master/test/img/g.gif "Google")
-![alt text](https://github.com/prod3v3loper/less-mixins/blob/master/test/img/ie.gif "InternetExplorer")
-![alt text](https://github.com/prod3v3loper/less-mixins/blob/master/test/img/o.gif "Opera")
-![alt text](https://github.com/prod3v3loper/less-mixins/blob/master/test/img/s.gif "Safari")
+![Firefox](https://github.com/prod3v3loper/less-mixins/blob/master/test/img/ff.gif "Firefox")
+![Chrome](https://github.com/prod3v3loper/less-mixins/blob/master/test/img/g.gif "Google")
+![InternetExplorer](https://github.com/prod3v3loper/less-mixins/blob/master/test/img/ie.gif "InternetExplorer")
+![Opera](https://github.com/prod3v3loper/less-mixins/blob/master/test/img/o.gif "Opera")
+![Safari](https://github.com/prod3v3loper/less-mixins/blob/master/test/img/s.gif "Safari")
 
 > A curated list of awesome Less mixins
 
 * [Tests Preview](test/img/tests.png)
 
 ### This repository has some Less-Mixins for you:
+
+</div>
 
 ###### @mixins
 
@@ -55,7 +59,7 @@ LESS mixin repository for crossbrowser
 * [breakpoint](partials/_breakpoint.less)
 * [font](partials/_font.less)
 
-## Usage
+# Usage
 
 ### General Usage
 
@@ -77,21 +81,24 @@ project less folder structur and use the mixins as suggested in the docs for eac
     .box-sizing();
 }
 ```
+<div align="center">
 
-## Contribute
+# Contribute
 
 Please [file an issue](https://github.com/Samettarim/less-mixins/issues) if you
 think something could be improved. Please submit Pull Requests when ever
 possible.
 
-## Built with
+# Built with
 
-* [NetBeans](https://netbeans.org/) - NetBeans editor for error-free code
+[NetBeans](https://netbeans.org/) - NetBeans editor for error-free code
 
-## Authors
+# Authors
 
-* **Samet Tarim** - *All works* - [prod3v3loper](https://www.tnado.com/author/prod3v3loper/)
+**Samet Tarim** - *All works*
 
-## License
+# License
 
-[GNU](https://github.com/prod3v3loper/less-mixins/blob/master/LICENSE)
+[GNU](https://github.com/prod3v3loper/less-mixins/blob/master/LICENSE) - [prod3v3loper](https://www.tnado.com/author/prod3v3loper/)
+
+</div>
