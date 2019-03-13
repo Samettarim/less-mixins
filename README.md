@@ -19,7 +19,7 @@ LESS mixin repository for crossbrowser
 
 > A curated list of awesome Less mixins
 
-* [Tests Preview](test/img/tests.png)
+[Tests Preview](test/img/tests.png)
 
 ### This repository has some Less-Mixins for you:
 
