@@ -85,7 +85,7 @@ project less folder structur and use the mixins as suggested in the docs for eac
 
 # Contribute
 
-Please [file an issue](https://github.com/Samettarim/less-mixins/issues) if you
+Please [file an issue](https://github.com/prod3v3loper/less-mixins/issues) if you
 think something could be improved. Please submit Pull Requests when ever
 possible.
 
